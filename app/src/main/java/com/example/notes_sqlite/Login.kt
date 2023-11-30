@@ -15,5 +15,10 @@ class Login : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
+        val welcomebtn = findViewById<FloatingActionButton>(R.id.welcomeButton)
+        welcomebtn.setOnClickListener{
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+
     }
 }
